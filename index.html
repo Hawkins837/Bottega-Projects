@@ -57,9 +57,99 @@
         margin-top: 75px;
         margin-bottom: 75px;
         display: grid;
-        grid-template-columns: 1fr 1fr .5fr;
+        grid-template-columns: 2fr 2fr .5fr;
+        grid-gap: 30px;
+    }
+
+    .donts-image-box{
+        text-align: center;
+        margin-bottom: 20px;
     }
     
+    .donts-image-box img{
+        width: 50%;
+    }
+
+    .donts-image-box div{
+        font-size: 14px;
+        color: #999;
+    }
+
+    .dos-donts-heading{
+        font-weight: 900;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+    .blue-text{
+        color: blue;
+    }
+
+    .red-text{
+        color: red;
+    }
+
+    .aternate-options-wrapper{
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+
+    .aternate-options-wrapper h3{
+       color: #999;
+       font-size: 18px;
+       font-weight: 900;
+    }
+
+    .aternate-options-wrapper li{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 19px;
+    }
+
+    .alternate-options-images{
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-gap: 100px 40px;
+    }
+    
+    .image-logos{
+        width: 60px;
+    }
+
+    .text-logos{
+        width: 90%;
+    }
+
+    .additional-branding-details{
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+
+    .additional-branding-details a {
+       color: #4fb8e8;
+       font-size: 19px;
+    }
+
+    .additional-branding-details p {
+       margin-bottom: 42px;
+    }
+
+    @media (max-width: 48em) {
+        .style-details {
+            grid-template-columns:  1fr;
+            grid-gap: 50px;
+        }
+
+        .style-details-text{
+            text-align: center;
+        }
+
+        .dos-donts-wrapper{
+            grid-template-columns: 1fr;
+        }
+    }
+
   </style>
 </head>
 
@@ -96,7 +186,7 @@
 
             <div class="dos-donts-wrapper">
                 <div class="dos-donts-list">
-                    <div class="dos-donts-heading">
+                    <div class="dos-donts-heading blue-text">
                         Logo Do's
                     </div>
 
@@ -108,7 +198,7 @@
                     </ul>
                 </div>
                 <div class="dos-donts-list">
-                    <div class="dos-donts-heading">
+                    <div class="dos-donts-heading red-text">
                         Logo Dont's
                     </div>
                 
@@ -121,28 +211,56 @@
                 </div>
 
                 <div class="donts-images">
-                    <div class="dont-image-box">
+                    <div class="donts-image-box">
                         <img src="images/dont_stretch.png" alt="">
                         <div>Stretch</div>
                     </div>
                 
 
                 
-                    <div class="dont-image-box">
+                    <div class="donts-image-box">
                         <img src="images/dont_crop.png" alt="">
                         <div>Crop</div>
                     </div>
                 
 
-                    <div class="dont-image-box">
+                    <div class="donts-image-box">
                         <img src="images/dont_color.png" alt="">
                         <div>Color</div>
                     </div>
                 </div>
             </div>
-        
-        </div>
 
+            <div class="aternate-options-wrapper">
+                <h3>Alternate Options</h3>
+                <ul>
+                    <li>The circular badge can be used separately from the wordmark.</li>
+                    <li>The icon may be extracted from the logo and applied separately - but it must remain white and have a background of our primary blue color.</li>
+                    <li>The wordmark may be used separately from the circular badge.</li>
+                    <li>Logo Do’s and Do Not’s above still apply.</li>
+                </ul>
+                <div class="alternate-options-images">
+                    <img class= "image-logos" src="images/ds_circle_logo.png" alt="">
+                    <img class= "image-logos" src="images/ds_square_logo.png" alt="">
+                    <img class= "text-logos" src="images/ds_icon_text_logo.png" alt="">
+                    <img class= "text-logos" src="images/ds_text_logo.png" alt="">
+                </div>
+
+                <div class="additional-branding-details">
+                    <h3>Asset Download</h3>
+                    <p>
+                        <a href="#">Download .zip file.</a>
+
+                    </p>
+
+                    <h3>Useage</h3>
+                    <p>
+                        Please remember to adhere to the above guidlines when referencing and using our logos. If you are unsure of the correct protocol 
+                        for a particular usecase, feel free to ask us at the following email: support@dailysmarty.com.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
